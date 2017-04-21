@@ -1,0 +1,11 @@
+/*清除浮动代码*/ 
+.clearfix:after{display:block;clear:both;content:"";visibility:hidden;height:0} 
+.clearfix{zoom:1} 
+
+.float-left {
+  float: left
+}
+
+.float-rigth {
+  float: right
+}
