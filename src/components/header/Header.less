@@ -3,4 +3,61 @@
   height: 68px;
   background: rgba(0,0,0,0.50);
   box-shadow: 0 0 4px 0 rgba(0,0,0,0.08);
+  min-width: 1150px;
+  .header-content {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    color: #fff;
+    .side {
+      width: 25%;
+      .title {
+        font-size: 24px;
+        width: 137px;
+        height: 31px;
+        line-height: 31px;
+        background: rgba(216, 216, 216, 0.2);
+        border-radius: 4px;
+        margin-top: 18px;
+      }
+      .login{
+        margin-top: 25px;
+        color: rgba(255, 255, 255, 0.43);
+        cursor: pointer;
+      }
+      .logo {
+          margin-top: 20px;
+          background: #F7F7F7;
+          margin-top: 24px;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          display: inline-block;
+        }
+    }
+    .center {
+      width: 50%;
+      line-height: 68px;
+      ul {
+        li {
+          display: inline-block;
+          cursor: pointer;
+          font-size: 18px;
+          margin: 0 20px;
+          .menu {
+            height: 60px;
+            line-height: 60px;
+            border-bottom: 5px solid transparent;
+          }
+          &:hover .menu {
+            border-bottom: 5px solid #6878F3;
+          }
+          &.active .menu {
+            border-bottom: 5px solid #6878F3;
+          }
+        }
+      }
+    }
+  }
+  
 }

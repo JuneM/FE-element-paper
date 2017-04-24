@@ -1,12 +1,16 @@
 <template>
   <div id="app">
     <v-header></v-header>
-    <router-view></router-view>
+    <div class="content">
+      <router-view></router-view>
+    </div>
+    <v-footer></v-footer>
   </div>
 </template>
 
 <script>
 import VHeader from 'components/header/Header'
+import VFooter from 'components/footer/Footer'
 
 export default {
   name: 'app',
@@ -16,11 +20,17 @@ export default {
     }
   },
   components: {
-    VHeader
+    VHeader,
+    VFooter
   }
 }
 </script>
 
-<style>
-
+<style scoped>
+  .content {
+    width: 1200px;
+    min-height: 542px;
+    background: #fff;
+    margin: 50px auto;
+  }
 </style>
