@@ -1,18 +1,36 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/home/home'
+import Login from '../views/login/index'
+import Disclaimer from '../views/disclaimer/index'
+import Investigate from '../views/investigate/index'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/',
+    path: '/home',
     name: 'home',
     component: Home
   },
   {
+    path: '/login',
+    name: 'login',
+    component: Login
+  },
+  {
+    path: '/disclaimer',
+    name: 'disclaimer',
+    component: Disclaimer
+  },
+  {
+    path: '/investigate',
+    name: 'investigate',
+    component: Investigate
+  },
+  {
     path: '*',
-    redirect: '/'
+    redirect: '/login'
   }
 ]
 
