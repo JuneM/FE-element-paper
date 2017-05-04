@@ -1,11 +1,11 @@
 <template>
-  <div class="input-paper">
+  <div class="input-tools">
     <div class="body">
       <div class="title">
         <ul>
-          <li>*查重后自动删除数据</li>
-          <li>*不泄露您的论文内容</li>
-          <li>*分析结果仅供参考</li>
+          <li>*识别文章错别字</li>
+          <li>*分析语法错误</li>
+          <li>*请输入你的文章内容</li>
         </ul>
       </div>
       <div class="content">
@@ -24,7 +24,7 @@
 
 <script>
 export default {
-  name: 'input-paper',
+  name: 'input-tools',
   data () {
     return {
     }
@@ -34,14 +34,14 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="less" scoped>
-.input-paper {
+.input-tools {
   width: 1200px;
   height: 542px;
   background: #EEECEC;
   border-radius: 2px;
   .body {
     margin: 0 auto;
-    width: 677px;
+    width: 733px;
     overflow: hidden;
     .title {
       margin: 25px 0; 

@@ -1,16 +1,16 @@
 <template>
   <div>
-    <input-paper v-if="type !== 'result'"></input-paper>
-    <result-paper v-else></result-paper>
+    <input-original v-if="type !== 'result'"></input-original>
+    <result-original v-else></result-original>
   </div>
 </template>
 
 <script>
-import InputPaper from './inputPaper.vue'
-import ResultPaper from './resultPaper.vue'
+import InputOriginal from './inputOriginal.vue'
+import ResultOriginal from './resultOriginal.vue'
 
 export default {
-  name: 'investigate',
+  name: 'original',
   data () {
     return {
     }
@@ -21,8 +21,8 @@ export default {
     }
   },
   components: {
-    InputPaper,
-    ResultPaper
+    InputOriginal,
+    ResultOriginal
   }
 }
 </script>

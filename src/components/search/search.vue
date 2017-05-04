@@ -4,14 +4,14 @@
         <form class="weui-search-bar__form">
             <div class="weui-search-bar__box">
                 <i class="weui-icon-search" style="cursor:pointer" @click="searchKeyword"></i>
-                <input type="search" class="weui-search-bar__input" v-model="keyword" id="searchInput" placeholder="搜索" required="" @keyup.enter="searchKeyword">
+                <input type="search" class="weui-search-bar__input" v-model="keyword" id="searchInput" :placeholder="placeholder" required="" @keyup.enter="searchKeyword">
                 <a href="javascript:" class="weui-icon-clear" id="searchClear"></a>
             </div>
             <label class="weui-search-bar__label" id="searchText" 
                    @click.stop="showSearch"
                    style="transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1);">
                 <i class="weui-icon-search"></i>
-                <span>搜索</span>
+                <span>{{placeholder}}</span>
             </label>
         </form>
         <a href="javascript:" class="weui-search-bar__cancel-btn" id="searchCancel" @click.stop="hideSearch">取消</a>
@@ -21,7 +21,13 @@
 
 <script>
   export default {
-    props: [],
+    props: {
+      placeholder: {
+        default () {
+          return '搜索'
+        }
+      }
+    },
     data () {
       return {
         isSearch: false,

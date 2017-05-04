@@ -15,7 +15,7 @@ a,input,button{ outline:none; }
 a:visited {color: #FFFF00; text-decoration:none;} 
 a:hover {color: #00FF00; text-decoration:underline;} 
 a:active {color: #0000FF; text-decoration:underline;}*/
-a{color: #000;}
+a{color: #FFF;}
 .wrapper{clear: both;width: 100%;}
 word-break:break-all /*文字换行*/
 /*white-space:nowrap 文字不换行*/

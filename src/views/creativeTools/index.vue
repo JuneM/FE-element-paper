@@ -1,16 +1,16 @@
 <template>
   <div>
-    <input-paper v-if="type !== 'result'"></input-paper>
-    <result-paper v-else></result-paper>
+    <input-tools v-if="type !== 'result'"></input-tools>
+    <result-tools v-else></result-tools>
   </div>
 </template>
 
 <script>
-import InputPaper from './inputPaper.vue'
-import ResultPaper from './resultPaper.vue'
+import InputTools from './inputTools.vue'
+import ResultTools from './resultTools.vue'
 
 export default {
-  name: 'investigate',
+  name: 'tools',
   data () {
     return {
     }
@@ -21,8 +21,8 @@ export default {
     }
   },
   components: {
-    InputPaper,
-    ResultPaper
+    InputTools,
+    ResultTools
   }
 }
 </script>

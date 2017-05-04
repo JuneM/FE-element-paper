@@ -1,15 +1,11 @@
 <template>
-  <div class="input-paper">
+  <div class="input-original">
     <div class="body">
       <div class="title">
-        <ul>
-          <li>*查重后自动删除数据</li>
-          <li>*不泄露您的论文内容</li>
-          <li>*分析结果仅供参考</li>
-        </ul>
+        <v-search placeholder="请输入文章的 url 网址快速查找全网相似内容源"></v-search>
       </div>
       <div class="content">
-        <textarea placeholder="请输入你的论文内容"></textarea>
+        <textarea placeholder="请输入你的文章或片段"></textarea>
       </div>
       <div class="des">
         <a>上传 word / PDF 文档</a>
@@ -23,18 +19,23 @@
 </template>
 
 <script>
+import VSearch from 'components/search/search'
+
 export default {
-  name: 'input-paper',
+  name: 'input-original',
   data () {
     return {
     }
+  },
+  components: {
+    VSearch
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="less" scoped>
-.input-paper {
+.input-original {
   width: 1200px;
   height: 542px;
   background: #EEECEC;

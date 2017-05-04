@@ -4,6 +4,8 @@ import Home from '../views/home/home'
 import Login from '../views/login/index'
 import Disclaimer from '../views/disclaimer/index'
 import Investigate from '../views/investigate/index'
+import Original from '../views/original/index'
+import CreativeTools from '../views/creativeTools/index'
 
 Vue.use(VueRouter)
 
@@ -29,8 +31,18 @@ const routes = [
     component: Investigate
   },
   {
+    path: '/original',
+    name: 'original',
+    component: Original
+  },
+  {
+    path: '/creativeTools',
+    name: 'creativeTools',
+    component: CreativeTools
+  },
+  {
     path: '*',
-    redirect: '/login'
+    redirect: '/home'
   }
 ]
 
