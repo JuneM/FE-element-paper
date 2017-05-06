@@ -27,10 +27,13 @@ export default {
 </script>
 
 <style scoped>
+  #app {
+    margin-top: 68px;
+  }
   .content {
     width: 1200px;
     min-height: 542px;
     background: #fff;
-    margin: 50px auto;
+    margin: 118px auto;
   }
 </style>
